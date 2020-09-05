@@ -1,3 +1,52 @@
 <resources>
-    <string name="app_name">IOT</string>
+    <string name="app_name"> - Smart Home - </string>
+
+    <!-- Air conditioner -->
+    <string name="switch_default">On</string>
+    <string name="iconDesc">Air Conditioner Icon</string>
+    <string name="setAutoOn">Set Auto On</string>
+    <string name="swOnAt">Switch On At   :</string>
+    <string name="swOffAt">Switch Off At : </string>
+    <string name="tempUnit">°C</string>
+    <string name="txtNotify">Notify Me</string>
+    <string name="detected_temp">When Detected : </string>
+    <string name="btnSave">Save</string>
+    <string name="btnClear">Clear All</string>
+    <string name="envirTempe">Environment Temperature (°C):</string>
+    <string name="tempeValue">-</string>
+
+    <!-- Light -->
+    <string-array name="brightness">
+        <item>0%</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+    </string-array>
+
+    <!-- Lock -->
+
+    <!--Curtain-->
+    <string name="cancel">Cancel</string>
+    <string name="conform">Confirm</string>
+    <string name="set_auto_time">Set Off Time :</string>
+    <string name="off_time">Start Time:</string>
+    <string name="on_time">End Time :</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <string name="todo">TODO</string>
+    <string name="getlight">getLight</string>
+    <string name="current_light">Current Light ：</string>
+    <string name="curtain_status_open_close">Curtain Status (OPEN/ CLOSE):</string>
+    <string name="smart_curtain">Smart Curtain</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+    <string name="_00_00">00:00</string>
+    <string name="manual_open_close_curtain">Manual OPEN/CLOSE Curtain:</string>
+    <string name="curtain_status">Curtain Status:</string>
+    <string name="reset">Reset</string>
+    <string name="end_time">End Time:</string>
+    <string name="start_time">Start Time:</string>
+    <string name="set_auto_closen_time">Set Auto Closen Time:</string>
+
 </resources>
