@@ -4,7 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/smarthome"
     tools:context=".SplashActivity">
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="192dp"
+        android:layout_height="80dp"
+        android:text="Smart Home"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
 </androidx.constraintlayout.widget.ConstraintLayout>

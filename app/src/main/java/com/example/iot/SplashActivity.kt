@@ -52,6 +52,8 @@ class SplashActivity : AppCompatActivity() {
                 prefEditor.putString("relay",relay.toString())
                 prefEditor.apply()
 
+                Log.d("CHECK",relay.toString())
+
             }
         })
 

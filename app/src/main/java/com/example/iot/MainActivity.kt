@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnLock.setOnClickListener{
-            val intent = Intent(this@MainActivity, LockActivity::class.java)
+            val intent = Intent(this@MainActivity, Lockv2Activity::class.java)
             startActivity(intent)
         }
         btnCurtain.setOnClickListener{
