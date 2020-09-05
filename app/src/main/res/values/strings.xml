@@ -14,6 +14,7 @@
     <string name="btnClear">Clear All</string>
     <string name="envirTempe">Environment Temperature (°C):</string>
     <string name="tempeValue">-</string>
+    <string name="title">Smart Air Conditioner</string>
 
     <!-- Light -->
     <string-array name="brightness">
@@ -22,6 +23,7 @@
         <item>50%</item>
         <item>75%</item>
     </string-array>
+    <string name="lightTitle">Smart Light Bulb</string>
 
     <!-- Lock -->
 
@@ -47,6 +49,6 @@
     <string name="reset">Reset</string>
     <string name="end_time">End Time:</string>
     <string name="start_time">Start Time:</string>
-    <string name="set_auto_closen_time">Set Auto Closen Time:</string>
+    <string name="set_auto_closen_time">Set Auto Close Time:</string>
 
 </resources>

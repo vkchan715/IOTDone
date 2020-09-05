@@ -160,6 +160,16 @@ class AirCondActivity : AppCompatActivity() {
     }
 
     private fun save(){
+        if(swAu.isChecked){
+            auto = "true"
+        }else{
+            auto = "false"
+        }
+        if(swNo.isChecked){
+            notify = "true"
+        }else{
+            notify = "false"
+        }
         editOn = findViewById(R.id.editSwOn)
         editOff = findViewById(R.id.editSwOff)
         editNo = findViewById(R.id.editNotify)

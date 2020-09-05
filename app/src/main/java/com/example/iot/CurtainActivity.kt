@@ -53,6 +53,7 @@ class CurtainActivity : AppCompatActivity() {
         btn_reset.setOnClickListener(){
             buttonEnd.setText("00:00")
             buttonStart.setText("00:00")
+            onPause()
         }
         //checkLight.run()
         manual_switch.setOnClickListener {
@@ -65,7 +66,10 @@ class CurtainActivity : AppCompatActivity() {
             }
         }
     }
-
+    override fun onPause(){
+        super.onPause()
+        handlers.removeCallbacks(checkTime)
+    }
     fun initValue(){
         val usersettings = getSharedPreferences("Preferences", Context.MODE_PRIVATE)
         val r = usersettings.getString("relay", "").toString().toInt()
