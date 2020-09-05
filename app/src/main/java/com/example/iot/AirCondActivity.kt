@@ -257,10 +257,10 @@ class AirCondActivity : AppCompatActivity() {
             }
             else if (tempeValue >= swOnValue) {
                 btnSw.isChecked = true
-                //updateDb("1")
+                updateDb("1")
             } else if (tempeValue <= swOffValue && tempeValue != 0.00) {
                 btnSw.isChecked = false
-                //updateDb("0")
+                updateDb("0")
             } else if (tempeValue == 0.00) {
                 btnSw.isChecked = btnSw.isChecked
             }
