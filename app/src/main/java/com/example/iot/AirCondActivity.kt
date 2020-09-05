@@ -13,6 +13,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import kotlinx.android.synthetic.main.activity_air_cond.*
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -90,8 +91,22 @@ class AirCondActivity : AppCompatActivity() {
             setNotify()
         }
         btnSa.setOnClickListener {
-            save()
-            getData()
+            if(editOn.text.toString().toDouble() > 40.00 || editOn.text.toString().toDouble() < 20.00 ){
+                editOn.setError("Temperature cannot more than 40°C and less than 20°C")
+                editOn.requestFocus()
+            }
+            else if(editOff.text.toString().toDouble() > 40.00 || editOff.text.toString().toDouble() < 20.00 ){
+                editOff.setError("Temperature cannot more than 40°C and less than 20°C")
+                editOff.requestFocus()
+            }
+            else if(editNo.text.toString().toDouble() > 40.00 || editNo.text.toString().toDouble() < 20.00 ){
+                editNo.setError("Temperature cannot more than 40°C and less than 20°C")
+                editNo.requestFocus()
+            }
+            else {
+                save()
+                getData()
+            }
         }
 
         btnCl.setOnClickListener {
@@ -246,7 +261,7 @@ class AirCondActivity : AppCompatActivity() {
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
                 with(NotificationManagerCompat.from(this)) {
-                    notify(1234, builder.build())
+                    notify(4321, builder.build())
                 }
             }
         }
