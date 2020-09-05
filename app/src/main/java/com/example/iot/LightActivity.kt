@@ -33,7 +33,7 @@ class LightActivity : AppCompatActivity() {
     var notify : String  = ""
     var home: String = ""
     var brightness: String = ""
-    var ultra: Int = 1000
+    var ultra: Double = 1000.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -121,7 +121,7 @@ class LightActivity : AppCompatActivity() {
                 autoSwitch = findViewById(R.id.autoSwitch)
                 spnBrightness = findViewById(R.id.spnBrightness)
                 val lightReading = p0.child("light").value.toString()
-                ultra = p0.child("ultra2").value.toString().toInt()
+                ultra = p0.child("ultra2").value.toString().toDouble()
 
                 if(lightReading != null){
                     txtLight.text = lightReading
@@ -286,7 +286,7 @@ class LightActivity : AppCompatActivity() {
         else if(spnBrightness.selectedItem.toString()=="75%"){
             target = 75 * 1024 / 100
         }
-        if(txtLight.text.toString().toInt() <= target && btnOn.text.toString() == "ON" && ultra < 40){
+        if(txtLight.text.toString().toInt() <= target && btnOn.text.toString() == "ON" && ultra < 40.0){
             val ref1 = FirebaseDatabase.getInstance().getReference("PI_03_CONTROL").child("relay")
             ref1.setValue("1")
             checkLight()
